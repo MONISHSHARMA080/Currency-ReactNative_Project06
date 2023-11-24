@@ -78,7 +78,7 @@ export default function App() {
         </View>
         <View style={styles.bottomContainer}>
           <FlatList
-            numColumns={3}
+            numColumns={2}
             data={currencyByRupee}
             keyExtractor={item => item.name}
             renderItem={({item}) => (
@@ -140,10 +140,9 @@ const styles = StyleSheet.create({
   },
   button: {
     flex: 1,
-
     margin: 12,
     height: 60,
-
+    width:190,
     borderRadius: 12,
     backgroundColor: '#fff',
     elevation: 2,
@@ -153,7 +152,8 @@ const styles = StyleSheet.create({
     },
     shadowColor: '#333',
     shadowOpacity: 0.1,
-    shadowRadius: 1,
+    shadowRadius: 4,
+    margin:12,
   },
   selected: {
     backgroundColor: '#ffeaa7',
